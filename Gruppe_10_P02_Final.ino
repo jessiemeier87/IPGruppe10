@@ -775,10 +775,6 @@ void displayNums() {
   if (millis() > 5000 && withinDist) {
     displayDist();
   } else {
-    /*
-     * beginnend mit '2', da die erste if-Anweisung in scroll()
-     * 1 zu displayCounter hinzufügt
-     */
     if (displayCounter == 1) {
       scrollText(timeLetters, 8);
     } else if (displayCounter == 2) {
